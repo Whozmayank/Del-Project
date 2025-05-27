@@ -40,7 +40,9 @@ app.use(methodOverride("_method"));
 app.engine("ejs", ejsMate);
 app.use(express.static(path.join(__dirname, "/public")));
 
-
+app.listen(port, () => {
+    console.log(`Listening on port ${port}`);
+});
 
 const store = MongoStore.create({
     mongoUrl : mongoUrl,
