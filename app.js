@@ -79,6 +79,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 passport.use(new LocalStrategy(User.authenticate()));
 
+
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
@@ -97,21 +98,6 @@ app.use((req, res, next) => {
     res.locals.currUser = req.user;
     next();
 });
-
-// app.get("/demouser", async (req, res) => { 
-//     let fakeUser = new User({
-//         email: "student@gmail.com",
-//         username: "sigma-student",
-//     });
-
-//     const newUser = await User.register(fakeUser, "password1234");
-//     res.send(newUser);
-// })
-
-
-// app.get("/", (req, res) => {
-//     res.send("Root route is working");
-// });
 
 
 app.use("/listings", listingRouter);
