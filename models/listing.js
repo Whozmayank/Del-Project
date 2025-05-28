@@ -9,7 +9,9 @@ const listingSchema = new Schema({
     },
     description: String,
     image:  {
-        filename: String,
+        filename: {type :String, 
+        enum: [jpg, png, jpeg, webp, avif],
+        },
         url: {
             type: String,
             default: "https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
