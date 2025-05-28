@@ -10,7 +10,7 @@ const listingSchema = new Schema({
     description: String,
     image:  {
         filename: {type :String, 
-        enum: [jpg, png, jpeg, webp, avif],
+        enum: ["jpg", "png", "jpeg", "webp", "avif"],
         },
         url: {
             type: String,
