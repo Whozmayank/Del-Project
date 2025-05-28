@@ -64,7 +64,7 @@ module.exports.edit = async (req, res) => {
 
 module.exports.update = async (req, res) => {
     let { id } = req.params;
-    const listing = await Listing.findById(id, {...req.body.listing});
+    const listing = await Listing.findByIdAndUpdate(id, {...req.body.listing});
 
     if (typeof req.file !== "undefined") {
         // If a new file is uploaded, update the image details
