@@ -6,7 +6,7 @@
 
 ### Live Demo
 
-[🌐 Visit Wanderlust](https://del-project-1.onrender.com)
+[🌐 Visit Wanderlust](https://del-project-1.onrender.com/listings)
 
 ## Table of Contents
 
@@ -55,8 +55,8 @@ Wanderlust helps travellers discover and book unique stays hosted by local prope
 
 ```bash
 # 1️⃣ Clone the repo
-git clone https://github.com/yourusername/wanderlust.git
-cd wanderlust
+git clone https://github.com/Whozmayank/Del-Project.git
+cd Del-Project
 
 # 2️⃣ Install dependencies
 npm install
@@ -92,7 +92,6 @@ SESSION_SECRET=yourSecret
 ├── models/           # Mongoose schemas
 ├── controllers/      # Request handlers
 ├── middleware/       # Auth & other middlewares
-├── uploads/          # Uploaded images (if not using cloud storage)
 ├── .env              # Environment configuration
 ├── app.js            # Main Express app
 └── README.md
