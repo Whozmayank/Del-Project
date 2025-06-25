@@ -79,7 +79,7 @@
                     <div class="card-body">
                         <h5 class="card-title">@<%= review.author.username %></h5>
                         <span class="badge bg-warning text-dark ms-auto">
-                                        <i class="fa fa-star"></i> <%= review.rating %>/5
+                                        <i class="fa fa-star mb-1"></i> <%= review.rating %>/5
                                     </span>
                         <p class="card-text"><%= review.comment %></p>
                         <form class="mb-3" action="/listings/<%= listing._id %>/reviews/<%= review._id %>?_method=DELETE" method="POST">
